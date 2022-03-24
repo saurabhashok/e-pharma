@@ -5,7 +5,6 @@ import {Badge} from "@material-ui/core";
 
 const Container = styled.div`
   height:60px;
-  /* background-color:black; */
 `;
 
 const Wrapper = styled.div`
@@ -30,6 +29,8 @@ const SearchContainer = styled.div`
 
 const Input = styled.input`
   border:none;
+  width:200px;
+  padding:5px;
 `
 
 const Left = styled.div`

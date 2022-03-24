@@ -6,12 +6,14 @@ flex:1;
 margin:3px;
 height:70vh;
 position: relative;
-`
+`;
+
 const Image = styled.img`
 width:100%;
 height:100%;
 object-fit:cover;
 `;
+
 const Info = styled.div`
 position:absolute;
 top:0;
@@ -22,7 +24,13 @@ justify-content:center;
 flex-direction:column;
 width:100%;
 height:100%;
+transition: all 0.05s ease;
+
+&:hover{
+  transform:scale(1.05);
+}
 `;
+
 const Title = styled.h1`
 color:white;
 margin-bottom:20px;
@@ -37,8 +45,6 @@ color:dark gray;
 cursor:pointer;
 font-weight:600;
 `;
-
-
 
 
 const CategoryItem = ({item}) => {
