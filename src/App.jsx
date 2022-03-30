@@ -1,8 +1,8 @@
-import  Home from './pages/Home';
-
+import Cart from "./pages/Cart";
+import Login from "./pages/Login";
 
 const App = () => {
-  return <div > <Home /> < /div>;
+  return <Cart/>;
 };
 
 export default App;
