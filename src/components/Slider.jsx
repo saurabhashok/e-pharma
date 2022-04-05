@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@material-ui/icons';
 import {sliderItems} from  "../data";
 import {useState} from 'react';
+import { mobile } from '../responsive';
 
 
 const Container = styled.div`
@@ -11,6 +12,8 @@ const Container = styled.div`
   /* background-color:Coral; */
   position:relative;
   overflow:hidden;
+  ${mobile({display: "none" })}
+
 `
 
 const Arrow = styled.div`
