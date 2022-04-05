@@ -35,22 +35,23 @@ const Input = styled.input`
   border:none;
   width:200px;
   padding:5px;
-  ${mobile({width: "50px"})}
+  ${mobile({width:"50px"})}
 `;
 
 const Left = styled.div`
 flex:1;
 display:flex;
 align-items:center;
+${mobile({width:"25%"})}
 `;
 
-const Center = styled.div`flex:1`
+const Center = styled.div`flex:1
+`;
 
 const Logo = styled.h1`
 font-weight:bold;
 text-align:center;
-${mobile({fontSize: "24px" })}
-
+${mobile({fontSize: "20px", justifyContent:"center"})}
 `;
 
 const Right = styled.div`
@@ -58,14 +59,13 @@ display:flex;
 align-items:center;
 justify-content:flex-end;
 flex:1;
-${mobile({ flex:2, justifyContent: "center" })}
+${mobile({ flex:1, justifyContent: "center" })}
 `;
 
 const MenuItem = styled.div`
 font-size:14;
 margin:25px;
-${mobile({fontSize: "12px" , marginLeft:"10px" })}
-
+${mobile({fontSize: "10px" , marginLeft:"10px" })}
 `;
 
 
